@@ -1,7 +1,9 @@
 ---
-categories:
+tags:
 - swig
 - python
+categories:
+- misc
 title: lessons learned on swig and python
 ---
 
