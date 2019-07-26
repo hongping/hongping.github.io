@@ -8,5 +8,5 @@ main:
   #   url: /year-archive/
   # - title: "Sample Collections"
   #   url: /collection-archive/
-  - title: "Following"
-    url: /following/
+  - title: "links"
+    url: /links/
