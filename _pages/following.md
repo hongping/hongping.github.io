@@ -2,5 +2,5 @@
 title : "Following"
 permalink : /following/
 ---
-https://alastairreid.github.io
-http://bitsbytesgates.blogspot.com
+
+Below are the links I am following
