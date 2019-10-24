@@ -15,3 +15,4 @@ fields:
   description: tags
 pages:
 - _posts/2019-07-22-lessons-learned-on-swig-and-python.md
+- _posts/formal-isa-specification-language.md
