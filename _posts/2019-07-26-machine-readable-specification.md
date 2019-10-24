@@ -1,12 +1,13 @@
 ---
-title : thoughts on machine readable specification
+title: thoughts on machine readable specification
 categories:
 - thoughts
 tags:
 - dsl
-- specification language 
----
+- specification language
+- formal specification
 
+---
 Specification is the most important part of a hardware design. RTL coders will code the HDL model based on the specification, while validators will use the specification to create test plan to verify the design. Circuit designers will need the specification to better draft the floor plan as well as meeting the timing and electrical requirements. Specifications is the **golden reference** for all parties in a design flow. Hence, it is very important that the specification is clear, accurate and without ambiguity.
 {: style="text-align: justify;"}
 
