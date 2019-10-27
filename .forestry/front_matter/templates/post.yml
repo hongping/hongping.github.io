@@ -14,6 +14,6 @@ fields:
   label: tags
   description: tags
 pages:
-- _posts/basic-c-project-template-with-cmake.md
+- _posts/2019-10-27-basic-c-project-template-with-cmake.md
 - _posts/2019-07-22-lessons-learned-on-swig-and-python.md
 - _posts/formal-isa-specification-language.md
