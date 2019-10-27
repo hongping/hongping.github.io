@@ -21,27 +21,16 @@ While setting up a C++ project of mine, I noticed that there will be a fixed str
 The template comes with Google Test version 1.10.0 source code in the `external` directory, and the CMake files will build a basic test in `tests` directory which is to test the aliveness of the project. Once done build and execute `tests\runUnitTests`, you should be able to see the following
 
 ```
-
 Running main() from ../external/googletest-release-1.10.0/googletest/src/gtest_main.cc
-
 [==========] Running 1 test from 1 test suite.
-
 [----------] Global test environment set-up.
-
 [----------] 1 test from DOA
-
 [ RUN      ] DOA.gtestAlive
-
 [       OK ] DOA.gtestAlive (0 ms)
-
 [----------] 1 test from DOA (0 ms total)
-
 [----------] Global test environment tear-down
-
 [==========] 1 test from 1 test suite ran. (4 ms total)
-
 [  PASSED  ] 1 test.
-
 ```
 
 Feel free to clone [hongping/cpp_template](https://github.com/hongping/cpp_template) and use this for your future project!
