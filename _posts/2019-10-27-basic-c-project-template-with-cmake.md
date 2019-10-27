@@ -4,7 +4,8 @@ tags:
 - programming
 - template
 title: Basic C++ Project Template with CMake
-categories: []
+categories:
+- cpp
 
 ---
 It has been awhile since I last coded in C++. The last compiler I used was Borland Turbo C++. Ever since then, I shifted away from C++ to other interpreted languages like Perl and Python, and also bits of Javascript for web based works.
