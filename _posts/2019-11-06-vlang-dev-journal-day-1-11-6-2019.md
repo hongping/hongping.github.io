@@ -15,6 +15,7 @@ Let's the development begin... On day 1, there is nothing much, but mostly doing
   1. using parser generator tool like antlr4, flex/bison, lex/yacc, etc.
   2. handcrafted the parser, like clang
 * there are many existing parser framework for system verilog
+
 | repo | language |
 | --- | --- |
 | https://github.com/Nic30/hdlConvertor | antlr4 c++ runtime |
@@ -23,6 +24,7 @@ Let's the development begin... On day 1, there is nothing much, but mostly doing
 | https://github.com/dalance/sv-parser | handcraft rust |
 | verilator | flex/bison c++ |
 | icarus verilog | flex/bison c++ |
+
 * not planning to use parser generator
   * not wanting to have extra tool dependency during build
   * not wanting to have dependency on runtime
