@@ -15,6 +15,8 @@ Let's the development begin... On day 1, there is nothing much, but mostly doing
   1. using parser generator tool like antlr4, flex/bison, lex/yacc, etc.
   2. handcrafted the parser, like clang
 * there are many existing parser framework for system verilog
+|repo|language|
+|---|---|
 |https://github.com/Nic30/hdlConvertor|antlr4 c++ runtime|
 |https://github.com/veriktig/ieee1800_2017|antlr4 java runtime|
 |https://github.com/MikePopoloski/slang|handcraft c++|
