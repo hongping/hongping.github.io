@@ -6,9 +6,9 @@ categories:
 - vlang
 
 ---
-This will be the first development journal for [vlang](https://github.com/hongping/vlang). Wanted to record down the work as a way to keep myself motivated to complete a project, as well as making sure the knowledge is not lost else where. The journal will be in bullet notes format, as that's how I keep track of the things as well as my thought stream.
+This will be the first development journal for [vlang](https://github.com/hongping/vlang). Wanted to record down the work as a way to keep myself motivated to complete a project, as well as making sure the knowledge is not lost else where. The journal will be in bullet notes format, as that's how I keep track of things as well as my stream of thoughts.
 
-Let's the development begin... On day 1, there is nothing much, but mostly doing research...
+Let's the development begin... On day 1, there are nothing much, but mostly doing research...
 
 * need to create a parser for system verilog, which is the most important part of the project.
 * generally there are two ways of constructing parser
@@ -31,4 +31,4 @@ Let's the development begin... On day 1, there is nothing much, but mostly doing
 * will be referencing [slang](https://github.com/MikePopoloski/slang) for the parser creation while also learn more about parsing and c++
 * not planning to fork the project, although the license is MIT. I wanted to learn from scratch as well 😁
 
-And that's conclude day 1. Day 2 will begin some works on basic repository setup and deep dive into slang.
+And that conclude day 1. Day 2 will begin some works on basic repository setup and deep dive into slang.
