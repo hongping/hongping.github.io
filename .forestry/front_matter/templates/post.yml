@@ -14,7 +14,8 @@ fields:
   label: tags
   description: tags
 pages:
-- _posts/2019-10-27-basic-c-project-template-with-cmake.md
+- _posts/vlang-dev-journal-day-1-11-6-2019.md
 - _posts/why-so-many-similar-open-source-software.md
-- _posts/2019-07-22-lessons-learned-on-swig-and-python.md
+- _posts/2019-10-27-basic-c-project-template-with-cmake.md
 - _posts/formal-isa-specification-language.md
+- _posts/2019-07-22-lessons-learned-on-swig-and-python.md
