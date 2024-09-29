@@ -1,10 +1,9 @@
 ---
 title: to python or not
-description: ""
-date: 2024-06-05T16:14:57.173Z
-preview: ""
+date: {}
 tags: []
 categories: []
 type: default
+published: false
 ---
 test post
