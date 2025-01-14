@@ -16,7 +16,7 @@ timezone:
 
 title: hongping # the main title
 
-tagline: bits and bytes # it will display as the sub-title
+tagline: Hitchhiker's Guide to the Unknown # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   Personal blog on programming and hardware design
@@ -84,8 +84,8 @@ pageviews:
 #
 # Available options:
 #
-#     light  - Use the light color scheme
-#     dark   - Use the dark color scheme
+#     light — Use the light color scheme
+#     dark — Use the dark color scheme
 #
 theme_mode: # [light | dark]
 
@@ -211,8 +211,9 @@ exclude:
   - tools
   - README.md
   - LICENSE
-  - "*.config.js"
-  - package*.json
+  - purgecss.js
+  - rollup.config.js
+  - "package*.json"
 
 jekyll-archives:
   enabled: [categories, tags]

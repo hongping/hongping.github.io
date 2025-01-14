@@ -48,7 +48,7 @@ github:
 
 twitter:
   username: twitter_username # change to your Twitter username
->>>>>>> v7.2.0
+>>>>>>> v7.2.4
 
 social:
   # Change to your full name.
@@ -72,7 +72,7 @@ social:
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
->>>>>>> v7.2.0
+>>>>>>> v7.2.4
 
 # Site Verification Settings
 webmaster_verifications:
@@ -100,15 +100,10 @@ analytics:
     domain: # fill in your Matomo domain
   cloudflare:
     id: # fill in your Cloudflare Web Analytics token
-<<<<<<< HEAD
-
-# Pageviews settings
-=======
   fathom:
     id: # fill in your Fathom Site ID
 
 # Page views settings
->>>>>>> v7.2.0
 pageviews:
   provider: # now only supports 'goatcounter'
 
@@ -126,7 +121,7 @@ pageviews:
 =======
 #     light — Use the light color scheme
 #     dark — Use the dark color scheme
->>>>>>> v7.2.0
+>>>>>>> v7.2.4
 #
 theme_mode: # [light | dark]
 
@@ -142,7 +137,7 @@ cdn:
 avatar: assets/img/profile.png
 =======
 avatar:
->>>>>>> v7.2.0
+>>>>>>> v7.2.4
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
@@ -152,11 +147,7 @@ social_preview_image: # string, local or CORS resources
 toc: true
 
 comments:
-<<<<<<< HEAD
-  # Global switch for the post comment system. Keeping it empty means disabled.
-=======
   # Global switch for the post-comment system. Keeping it empty means disabled.
->>>>>>> v7.2.0
   provider: # [disqus | utterances | giscus]
   # The provider options are as follows:
   disqus:
@@ -186,15 +177,9 @@ assets:
     env: # [development | production]
 
 pwa:
-<<<<<<< HEAD
-  enabled: true # the option for PWA feature (installable)
-  cache:
-    enabled: true # the option for PWA offline cache
-=======
   enabled: true # The option for PWA feature (installable)
   cache:
     enabled: true # The option for PWA offline cache
->>>>>>> v7.2.0
     # Paths defined here will be excluded from the PWA cache.
     # Usually its value is the `baseurl` of another website that
     # shares the same domain name as the current website.
@@ -246,13 +231,6 @@ defaults:
     values:
       layout: page
       permalink: /:title/
-<<<<<<< HEAD
-  - scope:
-      path: assets/js/dist
-    values:
-      swcache: true
-=======
->>>>>>> v7.2.0
 
 sass:
   style: compressed
@@ -273,8 +251,14 @@ exclude:
   - tools
   - README.md
   - LICENSE
+<<<<<<< HEAD
   - "*.config.js"
   - package*.json
+=======
+  - purgecss.js
+  - rollup.config.js
+  - "package*.json"
+>>>>>>> v7.2.4
 
 jekyll-archives:
   enabled: [categories, tags]
