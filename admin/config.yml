@@ -1,0 +1,11 @@
+backend:
+  name: github
+  branch: main # Branch to update (optional; defaults to master)
+  repo: hongping/hongping.github.io
+media_folder: 'assets/img'
+collections:
+  - name: 'blog'
+    label: 'Blog'
+    folder: '_posts/'
+    fields:
+      - { name: Title }
