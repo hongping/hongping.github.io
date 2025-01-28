@@ -1,7 +1,6 @@
 backend:
-  name: github
+  name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
-  repo: hongping/hongping.github.io
 media_folder: 'assets/img'
 collections:
   - name: 'blog'
