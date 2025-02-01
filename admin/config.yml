@@ -3,7 +3,7 @@ backend:
   repo: hongping/hongping.github.io # Path to your GitHub repository
   branch: main
   base_url: https://sveltia-cms-auth.hong-ping-tan.workers.dev  
-media_folder: assets/img
+media_folder: "assets/img"
 collections:
   - name: "blog"
     label: "Blog"
