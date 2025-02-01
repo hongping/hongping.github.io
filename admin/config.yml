@@ -7,5 +7,5 @@ media_folder: "assets/img"
 collections:
   - name: "blog"
     label: "Blog"
-    folder: "_posts/blog"
+    folder: "_posts"
     create: true  
