@@ -1,4 +1,5 @@
 backend:
   name: github
   repo: hongping/hongping.github.io # Path to your GitHub repository
-
+  branch: main
+  base_url: https://sveltia-cms-auth.hong-ping-tan.workers.dev  
