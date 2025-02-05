@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Handling Hardware Development Environment
+draft: false
 ---
 
 Being a hobbyist hardware developer, I have my own development environment for my off-work projects. Basically, the environment is simple - install Verilator as root into the system path and done. But things get a little complicated when I wanted to try out different version of Verilator. It is not that it can't be done, but it will involve modifying my makefile. And things will get complicated once more tools are involved, for e.g. RISC-V compiler versions, cocotb versions, etc. Hence it prompted me to find a better setup - a setup where the tooling is isolated from the makefiles.
