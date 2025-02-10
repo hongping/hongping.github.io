@@ -61,11 +61,14 @@ jobs:
         with:
           path: "_site${{ steps.pages.outputs.base_path }}"
       
+      - name: Setup Node
+        uses: actions/setup-node@v4
+
       - name: Build TinaCMS
+        run: npx tinacms build
         env:
           TINA_PUBLIC_CLIENT_ID: ${{ secrets.TINA_PUBLIC_CLIENT_ID }}
           TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
-        run: npx tinacms build
 
   deploy:
     environment:
