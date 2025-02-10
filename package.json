@@ -1,0 +1,29 @@
+{
+  "name": "hongping.github.io",
+  "version": "1.0.0",
+  "description": "[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp; [![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "TINA_PUBLIC_IS_LOCAL=true tinacms dev -c \"next dev\"",
+    "build": "tinacms build && next build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hongping/hongping.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hongping/hongping.github.io/issues"
+  },
+  "homepage": "https://github.com/hongping/hongping.github.io#readme",
+  "dependencies": {
+    "tinacms": "^2.6.3"
+  },
+  "devDependencies": {
+    "@tinacms/cli": "^1.8.3",
+    "@types/node": "^22.13.1"
+  }
+}
