@@ -16,7 +16,7 @@ timezone:
 
 title: hongping # the main title
 
-tagline: Blog about tech # it will display as the subtitle
+tagline: hitchhiker's guide to the unknown # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A blog about hardware and software development.
