@@ -19,3 +19,5 @@ content:
       - name: body
         label: Body
         type: rich-text
+      - categories: ["new"]
+      - tags: ["ttt"] 
