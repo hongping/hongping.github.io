@@ -4,12 +4,8 @@ content:
     path: _posts
     type: collection
     view:
-      fields: [ title, published, date ]
+      fields: [ title, date ]
     fields:
-      - name: published
-        label: Published
-        type: boolean
-        default: true
       - name: date
         label: Date
         type: date
@@ -19,5 +15,3 @@ content:
       - name: body
         label: Body
         type: rich-text
-      - categories: ["new"]
-      - tags: ["ttt"] 
