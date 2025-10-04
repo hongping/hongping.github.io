@@ -4,7 +4,7 @@ content:
     path: _posts
     type: collection
     view:
-      fields: [ title, date, tags ]
+      fields: [ title, date, category, tags, published ]
     fields:
       - name: title
         label: Title
@@ -12,12 +12,17 @@ content:
       - name: date
         label: Date
         type: date
+      - name: category
+        label: Category
+        type: string
+        list: true
       - name: tags
         label: Tags
         type: string
-        list:
-          min: 0
-          max: 8
+        list: true
+      - name: published
+        label: Published
+        type: boolean
       - name: body
         label: Body
         type: rich-text
