@@ -1,9 +1,9 @@
 ---
 title: Hello World Testing The Page CMS
 date: 2025-10-04
-category:
+categories:
   - hello
-  - test
+  - world
 tags:
   - first
 published: true
