@@ -4,7 +4,7 @@ content:
     path: _posts
     type: collection
     view:
-      fields: [ title, date, category, tags, published ]
+      fields: [ title, date, categories, tags, published ]
     fields:
       - name: title
         label: Title
@@ -12,8 +12,8 @@ content:
       - name: date
         label: Date
         type: date
-      - name: category
-        label: Category
+      - name: categories
+        label: Categories
         type: string
         list: true
       - name: tags
