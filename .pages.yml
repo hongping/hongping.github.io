@@ -12,6 +12,12 @@ content:
       - name: date
         label: Date
         type: date
+      - name: tags
+        label: Tags
+        type: string
+        list:
+          min: 0
+          max: 8
       - name: body
         label: Body
         type: rich-text
