@@ -14,13 +14,13 @@ There’s also another reason for picking JavaScript: it’s one of the most com
 
 As for the AI, I went with **Gemini Code Assist**. The main factor? It’s free, and Google is generous with the quotas:
 
-*   **60 requests per minute**
+*   60 requests per minute
     
-*   **1000 requests per day**
+*   1000 requests per day
     
 *   A **1 million token context window** for local code base
     
 
-That’s plenty of room for vibe coding experiments without worrying about hitting limits.
+That’s plenty of room for simple vibe coding experiments.
 
-Next, get started! I am not really fluent in Javascript - I can read and understand, but to start something from scratch with it, is near impossible for me.
+Next, get started! I am not really fluent in Javascript - I can read and understand, but to start something from scratch with it, is near impossible for me. I think this is a good point to prove how well the LLM handle, as long as I vibe correctly with clear classification - at least I thought.
