@@ -4,6 +4,7 @@ date: 2025-10-04
 tags:
   - vibe coding
   - gemini code assist
+  - llm
 published: true
 ---
 I’ve been thinking a lot about [vibe coding](https://en.wikipedia.org/wiki/Vibe_coding) and finally decided to give it a proper shot. I’ve toying with it on and off before, but never really finished a project. This past week, though, FOMO kicked in — so I committed to it, carving out just 20 minutes a day to see what would happen.
