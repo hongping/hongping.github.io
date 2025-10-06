@@ -34,7 +34,7 @@ The game is live here in [https://hongping.github.io/vibecoding-jspong/](https:/
 
 ## First Impressions
 
-Overall, I’m impressed — though not entirely surprised. I’ve played around with this kind of coding flow before, especially using Claude’s artifact feature. Claude lets you share and even execute web-based code directly, which already felt like a glimpse of this “vibe coding” style — I just didn’t know there is a for the flow.
+Overall, I’m impressed — though not entirely surprised. I’ve played around with this kind of coding flow before, especially using Claude’s artifact feature. Claude lets you share and even execute web-based code directly, which already felt like a glimpse of this “vibe coding” style — I just didn’t know there is a term for such flow.
 
 I’ve also tried getting sample code from ChatGPT before, and it usually produces something close to what I have in mind. So I already had a certain amount of trust in LLM-driven code generation.
 
@@ -56,4 +56,5 @@ For my next experiment, I’ll be testing out **context handling** — asking Ge
 
 * * *
 
-_Disclaimer: This blog post was drafted with the help of AI (ChatGPT) as well_
+_Disclaimer 1: This blog post was drafted with the help of AI (ChatGPT) as well._  
+_Disclaimer 2: Opinions expressed are solely my own and do not express the views or opinions of my employer._
