@@ -25,7 +25,7 @@ without launching a hardware simulator. As long as the code avoid HDL signals ac
 *   unit-testing verification logic
     
 
-All of it in plain Python, without touching RTL or waiting for a simulator license. For a reference, checkout tests/test\_basic\_[pyuvm.py](http://pyuvm.py) in the [**PyTBV repo**](https://github.com/hongping/pytbv). When running the example, you will be able to simulate transaction passing between UVM components. One thing to be aware of, the “time” you see in the logs isn’t real simulation time. There’s no time wheel in this environment. Everything executes as **untimed events**, and any delay you see is simply placeholder behavior that would normally be handled by an actual simulator.
+All of it in plain Python, without touching RTL or waiting for a simulator license. For a reference, checkout tests/test\_basic\_pyuvm.py in the [**PyTBV repo**](https://github.com/hongping/pytbv). When running the example, you will be able to simulate transaction passing between UVM components. One thing to be aware of, the “time” you see in the logs isn’t real simulation time. There’s no time wheel in this environment. Everything executes as **untimed events**, and any delay you see is simply placeholder behavior that would normally be handled by an actual simulator.
 
 ![Output from tests/test_basic_pyuvm.py](assets/img/cocotb.jpg)
 
