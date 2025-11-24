@@ -1,6 +1,12 @@
 ---
 title: "Proof of Concept: PyTBV to Stream Transactions from CSV"
-published: false
+date: 2025-11-24
+tags:
+  - pytbv
+  - cocotb
+  - pyuvm
+  - transactions based verification
+published: true
 ---
 Building on my earlier effort to get [cocotb and pyuvm running without a real simulator](https://www.linkedin.com/pulse/first-step-towards-pytbv-breaking-simulator-dependence-hong-ping-tan-niitc/?trackingId=41U15zDyrmApv9Xb0PmicA%3D%3D), I’ve added another kernel that streams recorded transactions from a CSV directly into a pyuvm agent. The implementation is now available in the [PyTVB repository](https://github.com/hongping/pytbv). One more twist this time: the entire development happened inside Google’s new Antigravity, with most of the coding driven by Gemini 3 Pro. I’ll share more about that experience in a separate post.
 
