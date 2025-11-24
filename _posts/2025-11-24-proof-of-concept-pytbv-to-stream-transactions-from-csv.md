@@ -6,6 +6,8 @@ Building on my earlier effort to get [cocotb and pyuvm running without a real si
 
 With this kernel in place, it’s showed clearly that recorded transactions can be replayed in an offline, structured UVM-style environment, allowing verification work to continue without depending on a real simulator. As long as transactions are captured, new checks can be built, coverage can be added, and multiple iterations can be carried out quickly.
 
+![CSVKernel Output](assets/img/csv_kernel.jpg)
+
 * * *
 
 # Some Technical Details
@@ -96,4 +98,20 @@ if __name__ == "__main__":
 
 # What's Next?
 
-Now that we have proven we can stream transactions through CSV into cocotb and pyuvm in post processing manner without real simulator, next is to cleanup the framework to make it more of an official Python package where it can be distributed through pip, and have proper documentation. Also, I would like to extend more kernels, as examples as well as for real case usages. I am also exploring how to make this whole framework able to run in live
+Now that the CSV-based transaction streaming approach has been proven, replaying transactions into cocotb and pyuvm in a post-processing mode without a real simulator, the next steps are clear. First, clean up the framework and package it as an official Python library (pip distribution) with proper documentation. Second, add more kernels as both examples and real-world options. Finally, explore live-simulation support: in that mode the monitor would act as a bridge between the hardware simulator and the transaction recording/streaming agent, enabling both recording and steering in real time.
+
+* * *
+
+# Try the CSVKernel
+
+The repository is available here: [https://github.com/hongping/pytbv](https://github.com/hongping/pytbv). The CSV example can be found in `tests/test_pyuvm_csv.py`. This test reads transactions from `tests/transactions.csv`, or from any CSV you provide via the `--csv` argument. The CSV file must include a header line starting with `#`, and must contain at least the `Time` and `Port` columns. All remaining fields will be dynamically expanded by the `CSVKernel` and its trigger.
+
+Happy trying and please feedbacks if you have any!
+
+* * *
+
+_Disclaimer:_
+
+*   _Opinions expressed are solely my own and do not express the views or opinions of my employer._
+    
+*   _All works are done with personal computing device and during personal time._
