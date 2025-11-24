@@ -43,3 +43,57 @@ class Producer(uvm_component):
 ```
 
 Once the CSV kernel detects a transaction destined for the target port, port A in this case, the trigger is fired. The monitor loop resumes from that point, with the transaction data supplied through the trigger’s return value. The example can be found in the repository - `tests/test_pyuvm_csv.py`
+
+This approach isn’t limited to CSV. The base kernel can be extended to interface with any transaction storage medium, VCD waveforms, SQL databases, DuckDB, and so on. The code below shows how CSVKernel derives from the base kernel and how a custom cocotb trigger is created. The first step is defining a trigger that allows a coroutine to be spawned and enables the Python test flow to await the next transaction; this is handled by the `Transaction` trigger. The next step is providing an interface for registering that trigger. In the CSVKernel example, this is implemented through `register_transaction_callback`. The run method then needs to be updated to define how each transaction is streamed to its respective port. It might look like a lot of work, but it isn’t. The core pieces are straightforward: define the trigger, register the trigger callback, and implement how the mock simulator executes the run flow.
+
+```
+class Transaction(GPITrigger):
+    def __init__(self, port_name):
+        super().__init__()
+        self.port_name = port_name
+        self._cbhdl = None
+
+    def _prime(self, callback):
+        if self._cbhdl is None:
+            self._cbhdl = cocotb.simulator.register_transaction_callback(self.port_name, None, callback, self)
+            if self._cbhdl is None:
+                raise RuntimeError(f"Unable set up {self!s} Trigger")
+        super()._prime(callback)
+
+    def __repr__(self):
+        return f"Transaction({self.port_name!r})"
+
+class CSVKernel(Kernel):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.version = "0.0.1"
+        self.product = "CSV Kernel"
+        self.transaction_listeners = collections.defaultdict(list)
+        self.csv_events = []
+        
+        if "csv_path" in kwargs:
+            self.load_transactions(kwargs["csv_path"])
+    
+    def register_transaction_callback(self, port, txn, cb, ud):
+        ret = CbTransaction(port, txn, cb, ud)
+        self.transaction_listeners[port].append(ret)
+        return ret     
+```
+
+What makes this even better is that PyTBV’s run method accepts a `kernel_cls` argument, allowing the kernel to be swapped without modifying the verification framework. With a well-structured monitor, scoreboard, and coverage setup, the same code can run across different kernels. This enables seamless reuse of the exact same source.
+
+```
+if __name__ == "__main__":
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--csv", default="tests/transactions.csv")
+    args = parser.parse_args()
+    
+    run("tests.test_pyuvm_csv", kernel_cls=CSVKernel, csv_path=args.csv)
+```
+
+* * *
+
+# What's Next?
+
+Now that we have proven we can stream transactions through CSV into cocotb and pyuvm in post processing manner without real simulator, next is to cleanup the framework to make it more of an official Python package where it can be distributed through pip, and have proper documentation. Also, I would like to extend more kernels, as examples as well as for real case usages. I am also exploring how to make this whole framework able to run in live
