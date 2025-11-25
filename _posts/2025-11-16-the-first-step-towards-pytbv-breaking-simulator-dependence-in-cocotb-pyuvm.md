@@ -1,6 +1,11 @@
 ---
 title: "The First Step Towards PyTBV: Breaking Simulator Dependence in cocotb + pyuvm"
 date: 2025-11-16
+categories:
+  - PyTBV
+tags:
+  - cocotb
+  - pytbv
 published: true
 ---
 A while back, I shared a [post](https://www.linkedin.com/posts/share-7393649223277326337-bi5E?lipi=urn%3Ali%3Apage%3Ad_flagship3_pulse_read%3B6g6wOkbITY2eOUnqPVvbvQ%3D%3D) on LinkedIn about an idea I wanted to explore, running cocotb and pyuvm without a hardware simulator. After nights of experimenting, I’m sharing the first working step of that idea. And that step is now taking shape as **PyTBV**, a lightweight path toward transaction based verification in pure Python. There have been similar efforts before: [**cocotb-stub-sim**](https://github.com/fvutils/cocotb-stub-sim) for basic stubbing, and [**cocotb-vivado**](https://github.com/themperek/cocotb-vivado) for Vivado integration. What I’ve done is build on those concepts and push them forward into the world of **cocotb 2.0** and the **latest pyuvm**, bringing them together into a clean, usable prototype.
