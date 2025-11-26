@@ -1,6 +1,8 @@
 ---
 title: From Vibe Coding to Spec Driven Development with Antigravity
 date: 2025-11-27
+categories:
+  - development
 tags:
   - vibe coding
   - antigravity
