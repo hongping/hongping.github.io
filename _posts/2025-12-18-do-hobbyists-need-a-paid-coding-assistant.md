@@ -1,6 +1,6 @@
 ---
 title: Do Hobbyists Need a Paid Coding Assistant?
-date: 2025-12-18
+date: 2025-12-17
 categories:
   - views
 tags:
