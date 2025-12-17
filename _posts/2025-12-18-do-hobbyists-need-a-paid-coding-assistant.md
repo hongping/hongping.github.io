@@ -23,4 +23,8 @@ For me, being a hobbyist is ultimately about balancing satisfaction against outc
 
 Other times, I don’t care about the act of coding at all. I just want to see whether an idea works. In those cases, I’m happy to outsource the implementation entirely to AI tools, treating them like a development team while I play the role of the bossy customer who is setting requirements, reviewing results, and giving feedback.
 
-The mistake is pretending one mode fits all. As a hobbyist, the real choice isn’t whether to use AI, but when to step in as the builder, and when to step back and just ask for the result.
+The mistake is pretending one mode fits all. As a hobbyist, the real choice isn’t whether to use AI, but when to step in as the builder, and when to step back and just ask for the result. AI coding tools are neither a shortcut nor a threat, instead, they’re an amplifier. What they amplify depends entirely on intent. When learning and craftsmanship are the goal, delegating too much to AI strips away the struggle that creates understanding. When exploration and validation are the goal, insisting on manual implementation is just self-imposed friction.
+
+The mature stance is being deliberate. Know when you want to _build_ and when you only want to _see_. Use AI as a reviewer when you care about authorship, and as an executor when you care about speed. Anything else is just sleepwalking into tools deciding how you work.
+
+In the end, hobby projects aren’t about shipping, they’re about choosing what kind of satisfaction you’re optimizing for.
