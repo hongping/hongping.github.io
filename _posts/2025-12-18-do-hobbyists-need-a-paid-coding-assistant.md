@@ -1,11 +1,11 @@
 ---
-title: Do Hobbyists Need a Paid Coding Assistant?
+title: Do Hobbyists Need a Paid Coding Assistant
 date: 2025-12-18
 categories:
   - views
 tags:
   - llm
-published: false
+published: true
 ---
 I’ve been using AI-assisted coding tools like Gravity, Cline, and Copilot for a while, and it keeps raising a question: as a hobbyist, do I really need them? There’s no denying their upside. They boost productivity, automate tedious work, and compressed the distance between an idea and a working prototype. But whether they belong in hobby projects depends entirely on intent.
 
